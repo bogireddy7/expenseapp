@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Expense Tracker</title>
+    <link rel="stylesheet" href="expense.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+    <h1>💰 Expense Tracker</h1>
+
+    <div class="balance-box">
+        <h3>Balance</h3>
+        <h2 id="balance">₹0</h2>
+    </div>
+
+    <div class="summary">
+        <div class="income">
+            <h4>Income</h4>
+            <p id="income">₹0</p>
+        </div>
+        <div class="expense">
+            <h4>Expense</h4>
+            <p id="expense">₹0</p>
+        </div>
+    </div>
+
+    <h3>Add Transaction</h3>
+
+    <input type="text" id="text" placeholder="Description">
+    
+    
+
+    <input type="date" id="date">
+    <input type="number" id="amount" placeholder="Amount (+income, -expense)">
+    
+    <button onclick="addTransaction()">Add Transaction</button>
+
+    <h3>History</h3>
+    <ul id="list"></ul>
+</div>
+
+<script src="expense.js"></script>
+</body>
+</html>
